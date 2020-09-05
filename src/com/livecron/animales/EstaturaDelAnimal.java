@@ -1,6 +1,6 @@
 package com.livecron.animales;
 
-public enum EstaturaDelAniamal {
+public enum EstaturaDelAnimal {
     LARGO,
     PEQUENIO,
     MEDIANO

@@ -7,7 +7,7 @@ public class Animal {
     protected boolean mascota;
     protected String nombreDelPropiertario;
     protected String descripcion;
-    protected EstaturaDelAniamal tamanio;
+    protected EstaturaDelAnimal tamanio;
     protected boolean estaDurmiendo;
     protected boolean macho;
 
@@ -20,7 +20,7 @@ public class Animal {
         System.out.println("Esta comiendo" + comida.getNombre());
     }
 
-    public void correr () {
+    public void correr() {
         System.out.println("Correr");
     }
 
@@ -72,11 +72,11 @@ public class Animal {
         this.descripcion = descripcion;
     }
 
-    public EstaturaDelAniamal getTamanio() {
+    public EstaturaDelAnimal getTamanio() {
         return tamanio;
     }
 
-    public void setTamanio(EstaturaDelAniamal tamanio) {
+    public void setTamanio(EstaturaDelAnimal tamanio) {
         this.tamanio = tamanio;
     }
 

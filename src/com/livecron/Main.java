@@ -74,21 +74,21 @@ public class Main {
         Animal gatoCuki = new Gato("Cuki", 2);
         gatoCuki.saltar(true);
         gatoCuki.setMacho(false);
-        gatoCuki.setTamanio(EstaturaDelAnimal.LARGO);
+        gatoCuki.setTamanio(EstaturaDelAniamal.LARGO);
 
         System.out.println(gatoCuki.toString());
 
         Animal leon = new Leon("Cuki1", 2);
         leon.setMacho(false);
         leon.setMascota(false);
-        leon.setTamanio(EstaturaDelAnimal.LARGO);
+        leon.setTamanio(EstaturaDelAniamal.LARGO);
 
         System.out.println(leon.toString());
 
         Perro tobi = new Perro("Tobi", 20);
         tobi.setEdad(1);
         tobi.setMacho(true);
-        tobi.setTamanio(EstaturaDelAnimal.MEDIANO);
+        tobi.setTamanio(EstaturaDelAniamal.MEDIANO);
         System.out.println(tobi.toString());
     }
 }

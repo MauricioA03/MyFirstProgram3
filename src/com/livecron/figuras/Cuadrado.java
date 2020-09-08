@@ -9,7 +9,6 @@ public class Cuadrado extends Rectangulo implements Figura {
     public String convertirColorABlanco(String color) {
         return COLOR_POR_DEFECTO + color;
     }
-
     // A = b * h
     @Override
     public double getArea() {

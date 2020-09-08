@@ -1,13 +1,16 @@
 package com.livecron.animales;
 
+import java.util.Objects;
+
 public class Animal {
 
+    protected String id;
     protected String nombre;
     protected int edad;
     protected boolean mascota;
     protected String nombreDelPropiertario;
     protected String descripcion;
-    protected EstaturaDelAnimal tamanio;
+    protected EstaturaDelAniamal tamanio;
     protected boolean estaDurmiendo;
     protected boolean macho;
 
@@ -20,7 +23,7 @@ public class Animal {
         System.out.println("Esta comiendo" + comida.getNombre());
     }
 
-    public void correr() {
+    public void correr () {
         System.out.println("Correr");
     }
 
@@ -72,11 +75,11 @@ public class Animal {
         this.descripcion = descripcion;
     }
 
-    public EstaturaDelAnimal getTamanio() {
+    public EstaturaDelAniamal getTamanio() {
         return tamanio;
     }
 
-    public void setTamanio(EstaturaDelAnimal tamanio) {
+    public void setTamanio(EstaturaDelAniamal tamanio) {
         this.tamanio = tamanio;
     }
 
@@ -98,5 +101,26 @@ public class Animal {
 
     public void saltar(boolean b) {
 
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Animal)) return false;
+        Animal animal = (Animal) o;
+        return Objects.equals(id, animal.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

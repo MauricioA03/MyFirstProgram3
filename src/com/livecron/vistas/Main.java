@@ -6,7 +6,9 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        new VentanaDeFlowLayout();
+        new VentanaDeGridLayout();
+//        new VentanaDeGridBagLayout();
+//        new VentanaDeFlowLayout();
 //        new VentanaDeCardLayout();
 //        new VentanaDeJohx();
 //        new VentanaDeBorderLayout();
